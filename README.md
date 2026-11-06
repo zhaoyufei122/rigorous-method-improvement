@@ -74,11 +74,3 @@ Budgets are deliberately smaller than the paper's (see the table in `SKILL.md`);
 ## License
 
 MIT — see `LICENSE`.
-
----
-
-## 中文说明
-
-这是一个给 AI 编程 agent 用的 skill，把 ScientistTwo（Google Cloud AI Research，2026）论文中的科研方法论提炼成可执行的工作流：先找 baseline 的局限，再针对局限提想法并做新颖性检索；先在小子集上实验，critic 给出 Good / Bad / 需要工程调优三种判定，并带明确噪声底；可用 sham 负对照防假阳性；用成功与失败的执行日志演化新想法；对最优想法做消融并砍掉无贡献的组件；按论文结构写报告，自审后用补充实验回应弱点；最后做四项完整性审计。`research/STATUS.md` 记录当前阶段与预算，方便断点续跑。
-
-**作者：Yufei Zhao。** 不提供算力、数据或独立评审器，只提供让结果可信的纪律。安装方式见上文 Install 一节。
